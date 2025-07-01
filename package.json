@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "NestJS Role-Based Auth App",
 "scripts": {
-  "start": "npx nest start",
-  "start:dev": "npx nest start --watch",
-  "build": "npx nest build"
+  "dev": "nest start --watch",        
+  "build": "nest build",               
+  "start": "node dist/main.js"        
 },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
