@@ -23,13 +23,16 @@ import { Doctor } from './doctors/doctor.entity';
       inject: [ConfigService],
       useFactory: async (configService: ConfigService) => ({
         type: 'postgres',
+        url: configService.get<string>('DATABASE_URL'),
         host: configService.get('DB_HOST'),
+  
         port: configService.get<number>('DB_PORT'),
         username: configService.get('DB_USERNAME'),
         password: configService.get('DB_PASSWORD'),
         database: configService.get('DB_NAME'),
         entities: [User, Doctor],
         synchronize: true,
+        autoLoadEntities: true,
       }),
     }),
 
