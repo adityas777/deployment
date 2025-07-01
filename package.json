@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "NestJS Role-Based Auth App",
   "scripts": {
-    "dev": "npx nest start --watch",
-    "build": "node node_modules/@nestjs/cli/bin/nest.js build",
-    "start": "node dist/main.js"
-  },
+  "start": "node dist/main.js",
+  "build": "node node_modules/@nestjs/cli/bin/nest.js build",
+  "start:dev": "npx nest start --watch",
+  "postinstall": "npm rebuild bcrypt --build-from-source"
+},
   "dependencies": {
     "@nestjs/common": "^10.0.0",
     "@nestjs/config": "^3.3.0",
