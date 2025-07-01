@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "NestJS Role-Based Auth App",
   "scripts": {
-  "start": "node dist/main.js",
-  "build": "node node_modules/@nestjs/cli/bin/nest.js build",
-  "start:dev": "npx nest start --watch",
-  "postinstall": "npm rebuild bcrypt --build-from-source"
-},
+    "start": "node dist/main.js",
+    "build": "node node_modules/@nestjs/cli/bin/nest.js build",
+    "start:dev": "npx nest start --watch",
+    "postinstall": "npm rebuild bcrypt --build-from-source"
+  },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
     "@nestjs/config": "^3.3.0",
@@ -23,6 +23,7 @@
     "passport-google-oauth20": "^2.0.0",
     "passport-jwt": "^4.0.1",
     "passport-local": "^1.0.0",
+    "pg": "^8.16.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.0.0",
     "sqlite3": "^5.1.6",
